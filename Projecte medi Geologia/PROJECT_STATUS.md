@@ -24,7 +24,8 @@ Projecte medi Geologia/
 ├── Plantilla_Google_Slides.md       # Especificació visual de les 7 diapositives i disseny
 ├── Generador_Plantilla_Slides.js    # Codi Apps Script per crear la presentació a Google Drive
 ├── Rubrica_Avaluacio_Geologia.md    # Rúbrica de 4 nivells per a CoRubrics, Kahoot/Quizizz i Passaport
-├── presentacio_projecte_geologia.html # Presentació interactiva HTML/SVG per explicar el projecte a l'alumnat
+├── presentacio_projecte_geologia.html # Presentació interactiva HTML/SVG per explicar el projecte a l'alumnat (Sessió 1)
+├── sessio_5_mapa_conceptual.html    # Aplicació autònoma imprimible (A4/A3) i interactiva: Mapa Conceptual, DUA i PDI (Sessió 5)
 ├── PROJECT_STATUS.md                # Registre d'estat del projecte i continuïtat entre sessions
 └── Dossiers_Grups/                  # Subcarpeta amb els dossiers DUA independents per equip:
     ├── Dossier_Grup_1_Tectonica.md      # Bloc 1: Tectònica de Plaques i Moviment de Continents
@@ -36,9 +37,12 @@ Projecte medi Geologia/
 
 ---
 
-## 3. Estat Actual i Punt de Control (Sessió actualitzada: 2026-11-03)
-- **Estat general:** **Completat, validat i a punt per a la implementació a l'aula.**
+## 3. Estat Actual i Punt de Control (Sessió actualitzada: 2026-11-12)
+- **Estat general:** **Completat, enriquit amb bastides didàctiques d'estructuració (Sessió 5) i a punt per a l'aula.**
 - **Tasques completades recentment:**
+  - [x] **Desenvolupament de la Bastida Imprimible i Interactiva de la Sessió 5:** Creació de [`sessio_5_mapa_conceptual.html`](sessio_5_mapa_conceptual.html) amb selector de 4 vistes (Fitxa Alumne/a per a impressió en A4/A3, Retallables DUA per a suport manipulatiu, Versió Docent amb mapa resolt i solucionari complet, i Mode Projecció PDI amb el modelatge de Novak), diagrames vectorials SVG purs d'alta resolució, estils de contrast per a fotocòpies escolars i llicenciament (David Cordones 2026, CC BY-SA 4.0).
+  - [x] **Integració de la Guia Didàctica Minut a Minut a la SdA:** Actualització de [`SdA_Projecte_Geologia.md`](SdA_Projecte_Geologia.md) incorporant l'apartat **7.1. Guia Didàctica d'Aplicació Docent: Sessió 5**, amb justificació tecnopedagògica (avançar el mapa com a organitzador previ d'Ausubel per evitar la parcel·lació del model puzle), gestió d'agrupaments pas a pas (individual, ambaixadors d'equip i parella d'amic crític), cronograma minut a minut de 90', consignes docents literals, preguntes socràtiques i pautes DUA.
+  - [x] **Actualització del Mapa de Recursos:** Sincronització de [`DOCUMENTACIO_PROJECTE.md`](DOCUMENTACIO_PROJECTE.md) i [`PROJECT_STATUS.md`](PROJECT_STATUS.md).
   - [x] **Integració al Protocol Oficial de SdA:** S'ha incorporat de manera estructural al protocol tecnopedagògic oficial ([`disseny-sda`](file:///C:/Users/dcordone/.gemini/config/skills/disseny-sda/SKILL.md)) la creació de la **Presentació Multimèdia Interactiva per a l'Alumnat en HTML5/SVG** (`presentacio_projecte_[tema].html`) com a Pas 4 obligatori en el disseny de qualsevol projecte SdA de Medi, així com a recurs tecnopedagògic d'obertura a la Sessió 1 (Enganxa).
   - [x] **Creació de la Presentació Interactiva per a l'Alumnat:** Desenvolupament de [`presentacio_projecte_geologia.html`](presentacio_projecte_geologia.html) amb interfície tecnopedagògica moderna, 10 diapositives seqüenciades, gràfics vectorials SVG originals de la Geosfera, navegació amb teclat/tàctil/PDI, vista en mosaic, mode Pissarra Digital i llicenciament normalitzat segons les directrius (David Cordones 2026, AGPL v3 / CC BY-SA 4.0).
   - [x] **Reescriptura completa del document oficial de la SdA:** Adaptació de [`5è i 6è GUIÓ PROJECTE 1r trimestre Geologia.docx`](5è%20i%206è%20GUIÓ%20PROJECTE%201r%20trimestre%20Geologia.docx) i creació de [`SdA_Projecte_Geologia.md`](SdA_Projecte_Geologia.md) seguint el model normatiu oficial de Situació d'Aprenentatge del Departament d'Educació de la Generalitat de Catalunya (Decret 175/2022 i Decret 480/2024).
