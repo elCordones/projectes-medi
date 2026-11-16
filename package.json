@@ -1,0 +1,21 @@
+{
+  "name": "portal-medi",
+  "version": "1.0.0",
+  "description": "Portal web de Projectes i Situacions d'Aprenentatge de Coneixement del Medi",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview"
+  },
+  "keywords": [],
+  "author": "David Cordones",
+  "license": "AGPL-3.0-or-later",
+  "type": "commonjs",
+  "dependencies": {
+    "docx": "^9.15.1"
+  },
+  "devDependencies": {
+    "vitepress": "^1.6.4"
+  }
+}

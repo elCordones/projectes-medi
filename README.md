@@ -1,6 +1,31 @@
 # 🌍 Projectes de Coneixement del Medi — Cicle Superior de Primària
 
-Repositori de projectes cooperatius d'Aprenentatge Basat en Projectes (ABP) per a Cicle Superior (5è i 6è de Primària), dissenyats segons el currículum de Catalunya (**Decret 175/2022** i modificació **Decret 480/2024**).
+Repositori i **Portal Web docent (VitePress)** dels projectes cooperatius d'Aprenentatge Basat en Projectes (ABP) per a Cicle Superior (5è i 6è de Primària), dissenyats segons el currículum de Catalunya (**Decret 175/2022** i modificació **Decret 480/2024**).
+
+---
+
+## 🌐 Portal Web Docent (VitePress · «Portal Medi · SdA Hub»)
+
+L'arrel del repositori incorpora un portal web modern en **VitePress 1.6** amb estètica adaptada a Coneixement del Medi, cercador instantani en català, plànols visuals d'aula (`.classroom-grid`) i accés directe a les Web Apps interactives, imprimibles A4 i documents oficials:
+
+* **🌍 Web en línia (GitHub Pages):** [https://elcordones.github.io/projectes-medi/](https://elcordones.github.io/projectes-medi/)
+* **Obrir en local (servidor de desenvolupament):**
+  ```powershell
+  npm run docs:dev
+  ```
+* **Compilar web estàtica de producció (`.vitepress/dist`):**
+  ```powershell
+  npm run docs:build
+  npm run docs:preview
+  ```
+* **Desplegar a GitHub Pages amb un sol clic:**
+  ```powershell
+  .\desplegar-github.ps1
+  ```
+* **Estat de desplegament al portal:**
+  * 🌋 **Geologia (`geologia/`):** 100% integrat (6 pàgines troncals, 5 Dossiers DUA complets, 8 sessions `S1–S8` minut a minut i recursos a `public/recursos/geologia/`).
+  * 🗺️ **Geografia ESP-CAT (`geografia/`):** Catàleg preparat (proper desplegament).
+  * 🏛️ **Grecs i Romans (`grecs-romans/`):** Catàleg preparat (proper desplegament).
 
 ---
 

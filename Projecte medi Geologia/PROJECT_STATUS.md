@@ -37,9 +37,11 @@ Projecte medi Geologia/
 
 ---
 
-## 3. Estat Actual i Punt de Control (Sessió actualitzada: 2026-11-12)
-- **Estat general:** **Completat, enriquit amb bastides didàctiques d'estructuració (Sessió 5) i a punt per a l'aula.**
+## 3. Estat Actual i Punt de Control (Sessió actualitzada: 2026-11-16)
+- **Estat general:** **Completat, amb l'organització cooperativa de la Sessió 5 en 5 Taules Mixtes d'Ambaixadors (Opció A) totalment definida i integrat al nou Portal Web de Coneixement del Medi (VitePress 1.6).**
 - **Tasques completades recentment:**
+  - [x] **Creació del Portal Web «Portal Medi · SdA Hub» i Integració Completa de Geologia (2026-11-16):** Desplegament de l'arquitectura VitePress a l'arrel del repositori ([`index.md`](../index.md), [`.vitepress/config.mjs`](../.vitepress/config.mjs), [`.vitepress/theme/`](../.vitepress/theme/custom.css)) amb tematització pròpia de Medi (`.theme-geologia` magma/hidrosfera), barra ràpida `S1–S8`, plànol visual d'agrupament d'aula (`.classroom-grid`), integració completa de [`geologia/`](../geologia/index.md) (6 pàgines troncals incloent els 5 Dossiers DUA + 8 sessions minut a minut) i recursos estàtics a [`public/recursos/geologia/`](../public/recursos/geologia/).
+  - [x] **Concreció del Model Puzle (Opció A - 5 Taules Mixtes d'Ambaixadors 1-2-3-4-5) a la Sessió 5:** Reorganització explícita de la Sessió 5 a [`SdA_Projecte_Geologia.md`](SdA_Projecte_Geologia.md), [`sessio_5_mapa_conceptual.html`](sessio_5_mapa_conceptual.html), [`DOCUMENTACIO_PROJECTE.md`](DOCUMENTACIO_PROJECTE.md) i [`presentacio_projecte_geologia.html`](presentacio_projecte_geologia.html). Els alumnes s'agrupen pel seu número (1 a 5) perquè a cada taula hi hagi 1 ambaixador de cada bloc: els Blocs 1-3 guien la branca interna (taronja), els Blocs 4-5 l'externa (blava) i la coavaluació d'*Amic Crític* es fa dins la mateixa taula mixta. S'ha afegit el quadre visual de les 5 Taules Mixtes a la vista `📽️ Modelatge PDI Novak` i els camps `Equip base` i `Taula Mixta` a la fitxa imprimible.
   - [x] **Desenvolupament de la Bastida Imprimible i Interactiva de la Sessió 5:** Creació de [`sessio_5_mapa_conceptual.html`](sessio_5_mapa_conceptual.html) amb selector de 4 vistes (Fitxa Alumne/a per a impressió en A4/A3, Retallables DUA per a suport manipulatiu, Versió Docent amb mapa resolt i solucionari complet, i Mode Projecció PDI amb el modelatge de Novak), diagrames vectorials SVG purs d'alta resolució, estils de contrast per a fotocòpies escolars i llicenciament (David Cordones 2026, CC BY-SA 4.0).
   - [x] **Integració de la Guia Didàctica Minut a Minut a la SdA:** Actualització de [`SdA_Projecte_Geologia.md`](SdA_Projecte_Geologia.md) incorporant l'apartat **7.1. Guia Didàctica d'Aplicació Docent: Sessió 5**, amb justificació tecnopedagògica (avançar el mapa com a organitzador previ d'Ausubel per evitar la parcel·lació del model puzle), gestió d'agrupaments pas a pas (individual, ambaixadors d'equip i parella d'amic crític), cronograma minut a minut de 90', consignes docents literals, preguntes socràtiques i pautes DUA.
   - [x] **Actualització del Mapa de Recursos:** Sincronització de [`DOCUMENTACIO_PROJECTE.md`](DOCUMENTACIO_PROJECTE.md) i [`PROJECT_STATUS.md`](PROJECT_STATUS.md).
@@ -57,13 +59,15 @@ Projecte medi Geologia/
     - Missió d'equip per crear 2-3 preguntes test (1 certa, 2 falses) per al concurs Kahoot / Quizizz.
     - Protocol d'avaluació triangular 360° amb CoRubrics (coavaluació d'exposició ~4 valoracions per alumne, coavaluació interna d'equip, autoavaluació i heteroavaluació docent) amb ponderació 50% - 35% - 15%.
     - Adaptació de la rúbrica oficial per a la graella de CoRubrics i disseny del Passaport de l'Oient Actiu.
-- **Punt exacte on ens hem quedat:**
-  - Tot el paquet documental està tancat, verificat, net i llest per ser sincronitzat al Google Drive del docent per a la seva aplicació directa a classe.
+- **Punt exacte on ens hem quedat (2026-11-16):**
+  - Tot el paquet documental de Geologia (incloent l'Opció A en 5 Taules Mixtes d'Ambaixadors a la Sessió 5 i el document Word oficial `.docx`) està tancat, verificat i **integrat al 100% dins del nou Portal Web VitePress** ([`../PROJECT_STATUS.md`](../PROJECT_STATUS.md) i [`../geologia/index.md`](../geologia/index.md)).
 
 ---
 
-## 4. Full de Ruta d'Implementació (Propers passos a Google Drive / Aula)
-- **Tasques preparatòries per a quan es vulgui aplicar a l'aula:**
+## 4. Full de Ruta d'Implementació (Propers passos)
+- **Continuïtat del Portal Web (veure [`../PROJECT_STATUS.md`](../PROJECT_STATUS.md)):**
+  - [ ] Validar visualment el portal de Geologia amb `npm run docs:dev` a l'arrel de `EDU - Projectes Medi` i continuar amb la integració de **Geografia (`geografia/`)** i **Grecs i Romans (`grecs-romans/`)**.
+- **Tasques preparatòries per a quan es vulgui aplicar Geologia a l'aula:**
   - [ ] **Crear la plantilla de CoRubrics a Google Drive:** Obrir Google Sheets, instal·lar el complement CoRubrics, copiar la graella de [`Rubrica_Avaluacio_Geologia.md`](Rubrica_Avaluacio_Geologia.md) i generar el formulari per a l'alumnat.
   - [ ] **Generar la presentació de Google Slides:** Executar [`Generador_Plantilla_Slides.js`](Generador_Plantilla_Slides.js) a [script.new](https://script.new) per disposar de la presentació maquetada a Drive i poder-ne fer còpies per als equips a Google Classroom.
   - [ ] **Configurar el Dossier a Google Docs (opcional amb pestanyes):** Crear un Google Docs amb 5 pestanyes i enganxar els 5 fitxers de [`Dossiers_Grups/`](Dossiers_Grups/) per oferir un únic enllaç a l'alumnat.

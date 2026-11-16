@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="ocean" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="100%" stop-color="#0f766e" />
+    </linearGradient>
+    <linearGradient id="magma" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#c2410c" />
+      <stop offset="100%" stop-color="#f59e0b" />
+    </linearGradient>
+  </defs>
+  <circle cx="32" cy="32" r="29" fill="url(#ocean)" stroke="#0f172a" stroke-width="2.5" />
+  <path d="M32 3 A29 29 0 0 1 61 32 L32 32 Z" fill="url(#magma)" />
+  <path d="M12 24 Q20 18 28 24 T24 40 Q16 42 12 32 Z" fill="#86efac" opacity="0.9" />
+  <circle cx="32" cy="32" r="8" fill="#fef08a" stroke="#c2410c" stroke-width="2" />
+  <circle cx="32" cy="32" r="29" fill="none" stroke="#e2e8f0" stroke-width="1.5" opacity="0.5" />
+</svg>
