@@ -51,9 +51,10 @@
      - Dissenyat i implementat el **Kit de Continuïtat Docent, Traspàs a Google Drive i Guia per a Mestres Substituts** amb la guia d'urgència («Què faig avui a l'aula?») i l'script automatitzador `public/recursos/geografia/Clonador_SdA_Drive.js` per crear en 1 sol clic a [script.new](https://script.new) tota l'estructura organitzativa a Google Drive.
      - Actualitzada la navegació ràpida de píndoles a `.vitepress/theme/index.js` amb el tema cartogràfic `.theme-geografia`, sidebar a `config.mjs` i portada `index.md`.
      - Compilat i verificat amb èxit (`npm run docs:build` en 6.13 s amb 0 errors i 0 enllaços trencats).
-- **Punt exacte on ens hem quedat:**
-  - El portal té integrades i verificades al 100% la **SdA 1 (Geologia)** i la **SdA 2 (Geografia)**.
-  - La propera tasca pendent és el **Pas 3 — Integrar la SdA 3 · Grècia i Roma: Clàssics a Escena (`grecs-romans/`)**.
+- **Punt exacte on ens hem quedat (Tancament de sessió 2026-11-16):**
+  - El portal té integrades i verificades al 100% la **SdA 1 (Geologia)** i la **SdA 2 (Geografia)**, amb el portal publicat en obert a GitHub Pages ([https://elcordones.github.io/projectes-medi/](https://elcordones.github.io/projectes-medi/)).
+  - S'ha creat la primera versió de l'script automatitzador de Google Apps Script (`Clonador_SdA_Drive.js`) i la guia de relleu docent a `geografia/kit-substitucio.md`.
+  - **Prioritat immediata per a la següent sessió:** **Acabar de perfilar l'script per desar a Google Drive** (personalització de noms de centre, compartició automàtica per correu amb l'equip de cicle/direcció i possible clonador universal extrapolable també a Geologia i Història).
 
 ---
 
@@ -62,4 +63,7 @@
 - [x] **Pas 1 — Validació visual de Geologia:** Executat `npm run docs:build` (exit 0) i portal verificat amb estètica completa (`.theme-geologia`, `.classroom-grid`, Dossiers DUA i Web Apps).
 - [x] **Pas 1.1 — Publicació i Desplegament CI/CD a GitHub Pages:** Repositori configurat com a públic ([`github.com/elCordones/projectes-medi`](https://github.com/elCordones/projectes-medi)), creat el workflow `.github/workflows/deploy.yml` i l'script PowerShell `desplegar-github.ps1`. **Web en línia i operativa al 100%** a [https://elcordones.github.io/projectes-medi/](https://elcordones.github.io/projectes-medi/) (HTTP 200).
 - [x] **Pas 2 — Integrar SdA 2 · Geografia de Catalunya i Espanya (`geografia/`):** Creades les 7 pàgines troncals, dossiers DUA complets de 5è i 6è, 8 sessions `S1–S8`, recursos a `public/recursos/geografia/`, Kit de Relleu Docent i Traspàs a Google Drive (`Clonador_SdA_Drive.js`), `.theme-geografia` activat i portada actualitzada.
+- [ ] **Pas 2.1 (Prioritat a l'inici de la següent sessió) — Perfilar l'Script per Desar a Google Drive:**
+  - Optimitzar i parametritzar `Clonador_SdA_Drive.js` (formulari o camps per introduir el nom de l'escola, correus dels mestres de cicle per compartir automàticament la carpeta en mode editor, millora del document d'urgència del substitut).
+  - Valorar la creació del clonador de Drive equivalent per a Geologia (deixant el mecanisme homogeni a tot el portal).
 - [ ] **Pas 3 — Integrar SdA 3 · Grècia i Roma: Clàssics a Escena (`grecs-romans/`):** Crear les pàgines troncals, guió teatral de representació (2-4 minuts), dossiers DUA dels 5 grups, 8 sessions `S1–S8`, recursos a `public/recursos/grecs-romans/`, activar `.theme-historia` i actualitzar `config.mjs` i `index.md`.
