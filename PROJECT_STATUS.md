@@ -58,7 +58,7 @@
 ## 3. Full de Ruta d'Implementació (Roadmap per a properes sessions)
 
 - [x] **Pas 1 — Validació visual de Geologia:** Executat `npm run docs:build` (exit 0) i portal verificat amb estètica completa (`.theme-geologia`, `.classroom-grid`, Dossiers DUA i Web Apps).
-- [x] **Pas 1.1 — Publicació i Desplegament CI/CD a GitHub Pages:** Creat el workflow `.github/workflows/deploy.yml` i l'script PowerShell `desplegar-github.ps1`. Portal sincronitzat amb el repositori GitHub [`elCordones/projectes-medi`](https://github.com/elCordones/projectes-medi).
+- [x] **Pas 1.1 — Publicació i Desplegament CI/CD a GitHub Pages:** Repositori configurat com a públic ([`github.com/elCordones/projectes-medi`](https://github.com/elCordones/projectes-medi)), creat el workflow `.github/workflows/deploy.yml` i l'script PowerShell `desplegar-github.ps1`. **Web en línia i operativa al 100%** a [https://elcordones.github.io/projectes-medi/](https://elcordones.github.io/projectes-medi/) (HTTP 200).
 - [ ] **Pas 2 — Integrar SdA 2 · Geografia de Catalunya i Espanya (`geografia/`):** Crear les pàgines troncals, dossiers DUA, 8 sessions `S1–S8`, recursos a `public/recursos/geografia/`, activar `.theme-geografia` a `.vitepress/theme/index.js` i actualitzar `config.mjs` i `index.md`.
 - [ ] **Pas 3 — Integrar SdA 3 · Grècia i Roma: Clàssics a Escena (`grecs-romans/`):** Crear les pàgines troncals, guió teatral, dossiers DUA, 8 sessions `S1–S8`, recursos a `public/recursos/grecs-romans/`, activar `.theme-historia` i actualitzar `config.mjs` i `index.md`.
 - [ ] **Pas 4 (Opcional) — Publicació a GitHub Pages:** Configurar `.github/workflows/deploy.yml` i l'script `desplegar-github.ps1` (equivalent al del Portal EF) si es vol publicar el portal en línia.
