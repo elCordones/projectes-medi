@@ -168,36 +168,45 @@ const resetFilters = () => {
   <article v-show="matchesProject(['5e', '6e'], ['geografia'])" class="bento-card bento-geografia">
     <div class="bento-header">
       <span class="bento-status-pill">🗺️ SdA 02 · 5è (CAT) i 6è (ESP)</span>
-      <span class="bento-soon-badge">🛠️ En integració al Portal</span>
+      <span class="bento-live-badge"><span class="pulse-dot"></span> 100% Operativa</span>
     </div>
     <h3 class="bento-title">
-      <a href="#cataleg-sda">Geografia Física i Paisatges de Catalunya i Espanya</a>
+      <a :href="$withBase('/geografia/')">El Mosaic de Paisatges: Geografia de Catalunya i d'Espanya</a>
     </h3>
     <p class="bento-desc">
-      Relleu peninsular i català, unitats morfoestructurals, vessants hidrogràfics, costes i zones climàtiques. Treball cooperatiu per equips amb dossiers adaptats, presentació a Google Slides i reflexió ecosocial sobre el territori.
+      Relleu peninsular i català, unitats morfoestructurals, vessants hidrogràfics, costes i zones climàtiques. Model Puzle 4+1, dossiers DUA per pestanyes, 7 diapositives a Google Slides, Kit de Relleu Docent a Drive i reflexió ecosocial sobre l'aigua i la sequera.
     </p>
     <div class="bento-metrics">
       <div class="bento-metric">
         <strong>8 Sessions 5E</strong>
-        <span>5è CAT / 6è ESP</span>
+        <span>90 min cadascuna</span>
       </div>
       <div class="bento-metric">
         <strong>5 Equips × 5</strong>
-        <span>Dossiers DUA</span>
+        <span>Regla 4+1 + DUA</span>
       </div>
       <div class="bento-metric">
-        <strong>7 Diapositives</strong>
-        <span>Slides + Exposició</span>
+        <strong>25 Subtemes</strong>
+        <span>Dossiers 5è CAT / 6è ESP</span>
       </div>
     </div>
     <div class="bento-sessions-box">
-      <span class="bento-sessions-label">📁 Estat de migració al Portal Web:</span>
-      <div style="font-size: 0.82rem; color: var(--vp-c-text-2); line-height: 1.45;">
-        Materials font disponibles a la carpeta <code>Projecte medi Geografia ESP - CAT/</code> (SdA oficial .docx/.md, dossiers DUA i Apps Script). Propera unitat a desplegar amb l'estil cartogràfic <code>.theme-geografia</code>.
+      <span class="bento-sessions-label">🗓️ Accés directe a les sessions (S1–S8):</span>
+      <div class="bento-session-pills">
+        <a :href="$withBase('/geografia/sessions/sessio-01.html')" title="S1: Llançament del Viatge i Equips">S1</a>
+        <a :href="$withBase('/geografia/sessions/sessio-02.html')" title="S2: Investigació al Dossier DUA">S2</a>
+        <a :href="$withBase('/geografia/sessions/sessio-03.html')" title="S3: Redacció a Slides (Text Primer)">S3</a>
+        <a :href="$withBase('/geografia/sessions/sessio-04.html')" title="S4: Disseny Visual i Preguntes Test">S4</a>
+        <a :href="$withBase('/geografia/sessions/sessio-05.html')" title="S5: Mapa Conceptual del Territori">S5</a>
+        <a :href="$withBase('/geografia/sessions/sessio-06.html')" title="S6: Assaig Oral i Diana d'Assaig">S6</a>
+        <a :href="$withBase('/geografia/sessions/sessio-07.html')" title="S7: Congrés Geogràfic i CoRubrics">S7</a>
+        <a :href="$withBase('/geografia/sessions/sessio-08.html')" title="S8: Gran Quizizz i Retorn 360°">S8</a>
       </div>
     </div>
     <div class="bento-actions">
-      <span class="bento-btn bento-btn-ghost" style="opacity: 0.85; cursor: default;">⏳ Proper desplegament (Pas 2)</span>
+      <a class="bento-btn bento-btn-primary" :href="$withBase('/geografia/')">Obrir SdA Geografia <span>→</span></a>
+      <a class="bento-btn bento-btn-ghost" :href="$withBase('/geografia/dossiers.html')">📖 Dossiers DUA</a>
+      <a class="bento-btn bento-btn-ghost" :href="$withBase('/geografia/kit-substitucio.html')">📁 Kit Relleu Drive</a>
     </div>
   </article>
 

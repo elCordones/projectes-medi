@@ -47,7 +47,7 @@ export default defineConfig({
             text: '🟢 Cicle Superior Primària (5è i 6è)',
             items: [
               { text: '🌋 SdA 1 · Geologia: La Terra Viva (8 Sessions)', link: '/geologia/' },
-              { text: '🗺️ SdA 2 · Geografia CAT i ESP (En integració)', link: '/#cataleg-sda' },
+              { text: '🗺️ SdA 2 · Geografia CAT i ESP (8 Sessions)', link: '/geografia/' },
               { text: '🏛️ SdA 3 · Grècia i Roma: Teatre (En integració)', link: '/#cataleg-sda' }
             ]
           },
@@ -65,23 +65,32 @@ export default defineConfig({
           {
             text: '💻 Aplicacions Interactives (PDI i Aula)',
             items: [
-              { text: '📽️ Presentació Interactiva Alumnat (Sessió 1 PDI)', link: '/recursos/geologia/presentacio_projecte_geologia.html', target: '_blank' },
-              { text: '🗺️ Mapa Conceptual Integrador + DUA + PDI (Sessió 5)', link: '/recursos/geologia/sessio_5_mapa_conceptual.html', target: '_blank' }
+              { text: '📽️ Presentació Interactiva Alumnat (Geologia S1 PDI)', link: '/recursos/geologia/presentacio_projecte_geologia.html', target: '_blank' },
+              { text: '🗺️ Mapa Conceptual Integrador + DUA + PDI (Geologia S5)', link: '/recursos/geologia/sessio_5_mapa_conceptual.html', target: '_blank' }
             ]
           },
           {
             text: '📖 Dossiers DUA i Bastides',
             items: [
               { text: '🌍 Els 5 Blocs i Dossiers DUA (Geologia)', link: '/geologia/dossiers' },
-              { text: '💻 Estructura 7 Diapositives Google Slides', link: '/geologia/materials' }
+              { text: '🗺️ Dossiers DUA Catalunya (5è) i Espanya (6è)', link: '/geografia/dossiers' },
+              { text: '💻 Estructura 7 Diapositives (Geografia)', link: '/geografia/materials' }
+            ]
+          },
+          {
+            text: '📁 Continuïtat Docent i Traspàs a Google Drive',
+            items: [
+              { text: '📁 Kit de Relleu Docent i Mestre Substitut (Geografia)', link: '/geografia/kit-substitucio' },
+              { text: '⚡ Clonador Integral a Google Drive (.js)', link: '/recursos/geografia/Clonador_SdA_Drive.js', target: '_blank' }
             ]
           },
           {
             text: '📊 Avaluació 360° i Documents Oficials',
             items: [
-              { text: '⚖️ Rúbrica CoRubrics, Quizizz i Passaport', link: '/geologia/avaluacio' },
+              { text: '⚖️ Rúbrica CoRubrics i Avaluació 360° (Geografia)', link: '/geografia/avaluacio' },
+              { text: '📄 Programació Oficial SdA Geografia (.docx)', link: '/recursos/geografia/SdA_Geografia_Oficial.docx', target: '_blank' },
               { text: '📄 Programació Oficial SdA Geologia (.docx)', link: '/recursos/geologia/SdA_Geologia_Oficial.docx', target: '_blank' },
-              { text: '⚡ Apps Script Generador Google Slides (.js)', link: '/recursos/geologia/Generador_Plantilla_Slides.js', target: '_blank' }
+              { text: '⚡ Apps Script Generador Slides Geografia (.js)', link: '/recursos/geografia/Generador_Plantilla_Slides.js', target: '_blank' }
             ]
           }
         ]
@@ -114,6 +123,35 @@ export default defineConfig({
             { text: 'S6 (Avalua 1): Assaig Oral i Checklist', link: '/geologia/sessions/sessio-06' },
             { text: 'S7 (Avalua 2): Congrés Oral i CoRubrics', link: '/geologia/sessions/sessio-07' },
             { text: 'S8 (Avalua 3): Gran Quizizz i Retorn 360°', link: '/geologia/sessions/sessio-08' }
+          ]
+        }
+      ],
+      '/geografia/': [
+        {
+          text: '🗺️ SdA 2: El Mosaic de Paisatges (Geografia)',
+          collapsed: false,
+          items: [
+            { text: 'Visió General i Context', link: '/geografia/' },
+            { text: 'Programació Curricular (175/2022)', link: '/geografia/programacio' },
+            { text: 'Metodologia Puzle (4+1) i DUA', link: '/geografia/dua-metodologia' },
+            { text: 'Dossiers DUA Catalunya (5è) i Espanya (6è)', link: '/geografia/dossiers' },
+            { text: 'Plantilla 7 Slides i Mapes', link: '/geografia/materials' },
+            { text: 'Avaluació 360°, CoRubrics i Passaport', link: '/geografia/avaluacio' },
+            { text: '📁 Kit Relleu Docent i Google Drive', link: '/geografia/kit-substitucio' }
+          ]
+        },
+        {
+          text: '🗓️ Sessions pas a pas (Model 5E · S1–S8)',
+          collapsed: false,
+          items: [
+            { text: 'S1 (Enganxa): Llançament del Viatge i Equips', link: '/geografia/sessions/sessio-01' },
+            { text: 'S2 (Explora): Investigació al Dossier DUA', link: '/geografia/sessions/sessio-02' },
+            { text: 'S3 (Explica): Redacció a Slides (Text Primer)', link: '/geografia/sessions/sessio-03' },
+            { text: 'S4 (Elabora 1): Disseny Visual i Preguntes Test', link: '/geografia/sessions/sessio-04' },
+            { text: 'S5 (Elabora 2): Mapa Conceptual del Territori', link: '/geografia/sessions/sessio-05' },
+            { text: 'S6 (Avalua 1): Assaig Oral i Diana d\'Assaig', link: '/geografia/sessions/sessio-06' },
+            { text: 'S7 (Avalua 2): Congrés Geogràfic i CoRubrics', link: '/geografia/sessions/sessio-07' },
+            { text: 'S8 (Avalua 3): Gran Quizizz i Retorn 360°', link: '/geografia/sessions/sessio-08' }
           ]
         }
       ]

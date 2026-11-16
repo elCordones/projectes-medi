@@ -39,19 +39,21 @@
 
 ## 2. Estat Actual i Punt de Control (Checkpoint: 2026-11-16)
 
-- **Estat general:** **Portal VitePress creat, compilat i operatiu amb el Projecte de Geologia integrat al 100%; pendent d'integrar Geografia i Grecs i Romans en properes sessions.**
+- **Estat general:** **Portal VitePress en línia a GitHub Pages (100% operatiu), amb les SdA 1 (Geologia) i SdA 2 (Geografia) integrades completament; pendent d'integrar la SdA 3 (Grecs i Romans) com a proper pas.**
 - **Feina completada en la sessió d'avui (2026-11-16):**
-  1. **Concreció del Model Puzle (Opció A: 5 Taules Mixtes d'Ambaixadors 1–5) a la Sessió 5 de Geologia:**
-     - Actualitzada tota la seqüència de la Sessió 5 a [`SdA_Projecte_Geologia.md`](Projecte%20medi%20Geologia/SdA_Projecte_Geologia.md), [`DOCUMENTACIO_PROJECTE.md`](Projecte%20medi%20Geologia/DOCUMENTACIO_PROJECTE.md), [`presentacio_projecte_geologia.html`](Projecte%20medi%20Geologia/presentacio_projecte_geologia.html) i al document Word oficial [`5è i 6è GUIÓ PROJECTE 1r trimestre Geologia.docx`](Projecte%20medi%20Geologia/5è%20i%206è%20GUIÓ%20PROJECTE%201r%20trimestre%20Geologia.docx).
-     - Actualitzada la bastida [`sessio_5_mapa_conceptual.html`](Projecte%20medi%20Geologia/sessio_5_mapa_conceptual.html) (camps `Equip base` i `Taula Mixta`, dinàmica Puzle, quadre de les 5 Taules Mixtes a la vista `Modelatge PDI Novak` i correcció de les media queries a `@media screen` perquè la fitxa d'alumnat imprimeixi exactament en **2 pàgines A4**).
-  2. **Construcció del «Portal de Coneixement del Medi · SdA Hub» amb VitePress 1.6.4:**
-     - Configurat `package.json`, `.gitignore`, `public/favicon.svg`, `.vitepress/config.mjs`, `.vitepress/theme/index.js` i `.vitepress/theme/custom.css`.
-     - Creada la portada Bento Grid ([`index.md`](index.md)) amb doble filtre en viu (Curs/Modalitat i Àmbit Curricular) i targetes per als 3 projectes.
-     - Integrat al 100% el projecte de **Geologia** a [`geologia/`](geologia/index.md): 6 pàgines troncals (incloent tots 5 Dossiers DUA complets a `dossiers.md`), 8 sessions `S1–S8` amb plànols `.classroom-grid` i recursos estàtics copiats a `public/recursos/geologia/`.
-     - Compilat i verificat amb `npm run docs:build` (codi `0`, 0 *dead links*) i comprovat en viu amb el servidor VitePress (HTTP `200` a totes les rutes).
+  1. **Publicació i Desplegament CI/CD a GitHub Pages:**
+     - Repositori configurat com a públic a [`github.com/elCordones/projectes-medi`](https://github.com/elCordones/projectes-medi).
+     - Creat el workflow `.github/workflows/deploy.yml` i l'script PowerShell `desplegar-github.ps1`.
+     - Web en línia i operativa a [https://elcordones.github.io/projectes-medi/](https://elcordones.github.io/projectes-medi/).
+  2. **Integració al 100% de la SdA 2 · Geografia de Catalunya i Espanya (`geografia/`):**
+     - Creades les 7 pàgines troncals a `geografia/` (`index.md`, `programacio.md`, `dua-metodologia.md`, `dossiers.md`, `materials.md`, `avaluacio.md` i `kit-substitucio.md`).
+     - Desenvolupades les 8 sessions (`S1–S8`) pas a pas amb la distribució visual d'aula `.classroom-grid` i la regla del 4 + 1.
+     - Dissenyat i implementat el **Kit de Continuïtat Docent, Traspàs a Google Drive i Guia per a Mestres Substituts** amb la guia d'urgència («Què faig avui a l'aula?») i l'script automatitzador `public/recursos/geografia/Clonador_SdA_Drive.js` per crear en 1 sol clic a [script.new](https://script.new) tota l'estructura organitzativa a Google Drive.
+     - Actualitzada la navegació ràpida de píndoles a `.vitepress/theme/index.js` amb el tema cartogràfic `.theme-geografia`, sidebar a `config.mjs` i portada `index.md`.
+     - Compilat i verificat amb èxit (`npm run docs:build` en 6.13 s amb 0 errors i 0 enllaços trencats).
 - **Punt exacte on ens hem quedat:**
-  - El portal VitePress arrenca amb `npm run docs:dev` des de `C:\Users\dcordone\Desktop\ANTIGRAVITY\EDU - Projectes Medi`.
-  - El projecte de **Geologia** està 100% integrat i verificat; les targetes de **Geografia** i **Grecs i Romans** ja apareixen al catàleg de la portada com a «En integració al Portal», pendents de crear les seves carpetes `geografia/` i `grecs-romans/`.
+  - El portal té integrades i verificades al 100% la **SdA 1 (Geologia)** i la **SdA 2 (Geografia)**.
+  - La propera tasca pendent és el **Pas 3 — Integrar la SdA 3 · Grècia i Roma: Clàssics a Escena (`grecs-romans/`)**.
 
 ---
 
@@ -59,6 +61,5 @@
 
 - [x] **Pas 1 — Validació visual de Geologia:** Executat `npm run docs:build` (exit 0) i portal verificat amb estètica completa (`.theme-geologia`, `.classroom-grid`, Dossiers DUA i Web Apps).
 - [x] **Pas 1.1 — Publicació i Desplegament CI/CD a GitHub Pages:** Repositori configurat com a públic ([`github.com/elCordones/projectes-medi`](https://github.com/elCordones/projectes-medi)), creat el workflow `.github/workflows/deploy.yml` i l'script PowerShell `desplegar-github.ps1`. **Web en línia i operativa al 100%** a [https://elcordones.github.io/projectes-medi/](https://elcordones.github.io/projectes-medi/) (HTTP 200).
-- [ ] **Pas 2 — Integrar SdA 2 · Geografia de Catalunya i Espanya (`geografia/`):** Crear les pàgines troncals, dossiers DUA, 8 sessions `S1–S8`, recursos a `public/recursos/geografia/`, activar `.theme-geografia` a `.vitepress/theme/index.js` i actualitzar `config.mjs` i `index.md`.
-- [ ] **Pas 3 — Integrar SdA 3 · Grècia i Roma: Clàssics a Escena (`grecs-romans/`):** Crear les pàgines troncals, guió teatral, dossiers DUA, 8 sessions `S1–S8`, recursos a `public/recursos/grecs-romans/`, activar `.theme-historia` i actualitzar `config.mjs` i `index.md`.
-- [ ] **Pas 4 (Opcional) — Publicació a GitHub Pages:** Configurar `.github/workflows/deploy.yml` i l'script `desplegar-github.ps1` (equivalent al del Portal EF) si es vol publicar el portal en línia.
+- [x] **Pas 2 — Integrar SdA 2 · Geografia de Catalunya i Espanya (`geografia/`):** Creades les 7 pàgines troncals, dossiers DUA complets de 5è i 6è, 8 sessions `S1–S8`, recursos a `public/recursos/geografia/`, Kit de Relleu Docent i Traspàs a Google Drive (`Clonador_SdA_Drive.js`), `.theme-geografia` activat i portada actualitzada.
+- [ ] **Pas 3 — Integrar SdA 3 · Grècia i Roma: Clàssics a Escena (`grecs-romans/`):** Crear les pàgines troncals, guió teatral de representació (2-4 minuts), dossiers DUA dels 5 grups, 8 sessions `S1–S8`, recursos a `public/recursos/grecs-romans/`, activar `.theme-historia` i actualitzar `config.mjs` i `index.md`.

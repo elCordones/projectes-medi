@@ -16,6 +16,20 @@ const SDA_BAR_CONFIG = {
       { label: '💻 7 Slides', path: '/geologia/materials' },
       { label: '📊 Avaluació', path: '/geologia/avaluacio' }
     ]
+  },
+  geografia: {
+    tag: '🗺️ GEOGRAFIA',
+    prefix: '/geografia',
+    sessions: 8,
+    coreLinks: [
+      { label: '🎯 Resum', path: '/geografia/' },
+      { label: '📋 Prog.', path: '/geografia/programacio' },
+      { label: '🧩 Puzle + DUA', path: '/geografia/dua-metodologia' },
+      { label: '📖 Dossiers', path: '/geografia/dossiers' },
+      { label: '💻 7 Slides', path: '/geografia/materials' },
+      { label: '📊 Avaluació', path: '/geografia/avaluacio' },
+      { label: '📁 Relleu Drive', path: '/geografia/kit-substitucio' }
+    ]
   }
 };
 
